@@ -4,4 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body div {
+  max-width: 500px;
+  height: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+body div h1 {
+  color: aqua;
+  text-shadow: 1px 3px 2px black;
+  text-align: center;
+  font-size: 45px;
+}
+
 /*# sourceMappingURL=styles.css.map */
