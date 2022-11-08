@@ -6,42 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wclassth=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="icon" href="./assets/icons8-calculadora-100.png" type="image/png">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
 
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/icons8-calculadora-100.png" type="image/png">
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
-    <div id="conteiner">
-        <h1> Calculadora Sanchez</h1>
-        <div class="content">
-            <div class="content-0"><i class="fa-solid fa-0"></i></div>
-            <div class="content-1"><i class="fa-solid fa-1"></i></div>
-            <div class="content-2"><i class="fa-solid fa-2"></i></div>
-            <div class="content-3"><i class="fa-solid fa-3"></i></div>
-            <div class="content-4"><i class="fa-solid fa-4"></i></div>
-            <div class="content-5"><i class="fa-solid fa-5"></i></div>
-            <div class="content-6"><i class="fa-solid fa-6"></i></div>
-            <div class="content-7"><i class="fa-solid fa-7"></i></i></div>
-            <div class="content-8"><i class="fa-solid fa-8"></i></div>
-            <div class="content-9"><i class="fa-solid fa-9"></i></div>
-            <div class="content-adicionar"><i class="fa-solid fa-plus"></i></div>
-            <div clas="content-subtrair"><i class="fa-solid fa-minus"></i></div>
-            <div class="content-dividir"><i class="fa-solid fa-divide"></i></div>
-            <div class="content-multiplicar"><i class="fa-solid fa-xmark"></i></div>
-            <div class="content-resultado"><i class="fa-solid fa-equals"></i></div>
-            
+    <!-- DIV PAI -->
+    <div id="calc">
+        <!-- Title -->
+        <h3> Calculadora JS</h3>
+
+        <div id="calc-operations">
+            <div id="calc-previous-operation"></div>
+            <div id="calc-current-operation"></div>
         </div>
 
-        <div class="botao">
-            <button class="botao-corrigir">Corrigir</button>
-            <button class="botao-limpar">Limpar</button>
+        <div id="buttons-conteiner">
+            <button>CE</button>
+            <button>C</button>
+            <button>DEL</button>
+            <button>/</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button>*</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button>-</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button>+</button>
+            <button class="number">0</button>
+            <button class="number">.</button>
+            <button id="equal-btn">=</button>
+
         </div>
-        
-        
+
     </div>
-    <script src="./script.js"></script>
+
 </body>
 
 </html>

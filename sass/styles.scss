@@ -1,24 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@use 'variables';
+@use 'mixins';
+
+* {
+    @include mixins.container;
+
 }
 
-body{
+body {
+    @include mixins.flex;
 
-    font-family: Arial, Helvetica, sans-serif;
-    div{
-        max-width: 500px;
-        height: 300px;
-        margin: auto;
-        margin-top: 50px;
-        
-        h1{
-            color: aqua;
-            text-shadow: 1px 3px 2px black;
-            text-align: center;
-            font-size: 45px;
-            text-decoration: underline;
+    h3 {
+        font-size: .8em;
+        text-shadow: 1px 1px 1px #ffff;
+        font-weight: 300;
+        color: variables.$primary-color;
+    }
+}
+
+#calc {
+
+    @include mixins.calc;
+
+
+    &-operations {
+        text-align: right;
+    }
+
+    &-previous-operation,
+    &-current-operation {
+        min-height: 1.6em;
+        padding: .2em;
+        overflow-wrap: break-word;
+    }
+
+    &-previous-operation {
+        color: variables.$tertiary-color;
+    }
+
+    &-current-operation {
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+}
+
+#buttons-conteiner {
+    @include mixins.buttons-conteiner;
+
+    button{
+        @include mixins.buttons;
+         &:hover{
+            background-color: #bababa;
+            border-color: #9999
+         }
+    }
+    .number{
+        @include mixins.number;
+    }
+    #equal-btn{
+        grid-column: span 2;
+        background-color: #75a5cb;
+        &:hover{
+            background-color: #3a91d8;
         }
     }
+   
 }
