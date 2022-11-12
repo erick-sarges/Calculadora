@@ -7,16 +7,48 @@
 
 body {
   background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3em;
+}
+body a {
+  color: #75a5cb;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
 }
 body h3 {
   font-size: 0.8em;
   text-shadow: 1px 1px 1px white;
   font-weight: 300;
   color: #666;
+}
+
+.header {
+  max-width: 100%;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+  max-width: 200px;
+  margin-left: auto;
+  height: 100%;
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul li a:hover {
+  color: #3a91d8;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
 }
 
 #calc {

@@ -7,7 +7,18 @@
 }
 
 body {
-    @include mixins.flex;
+    background-color: variables.$bg-color1 ;
+    a{
+        color: variables.$social-color;
+        text-decoration: none;
+        transition: .4s;
+    
+    }
+
+    ul{
+
+        list-style: none
+    }
 
     h3 {
         font-size: .8em;
@@ -16,7 +27,32 @@ body {
         color: variables.$primary-color;
     }
 }
+.header{
 
+    @include mixins.head;
+
+    &-social-media{
+
+        ul{
+            @include mixins.social;
+            height: 100%;
+
+            li{
+                margin: 0 1rem;
+                
+                 a{
+                    &:hover{
+                        color: variables.$social-color-hover;
+                    }
+                 }
+            }
+        }
+    }
+}
+main{
+    @include mixins.flex;
+
+}
 #calc {
 
     @include mixins.calc;

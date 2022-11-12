@@ -1,5 +1,23 @@
 @use 'variables';
 
+@mixin head {
+    max-width: variables.$header-width;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+    
+     
+}
+
+@mixin social {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    max-width: variables.$social-width;
+    margin-left:  auto;
+    
+}
+
 @mixin container{
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +26,6 @@
 }
 
 @mixin flex {
-    background-color: variables.$bg-color1;
     display: flex;
     align-items: center;
     justify-content: center;
