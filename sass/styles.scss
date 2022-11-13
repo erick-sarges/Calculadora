@@ -102,3 +102,13 @@ main{
     }
    
 }
+
+footer{
+    text-align: center;
+    padding-bottom: 2rem;
+
+    span{
+        font-weight: bold;
+        color: variables.$social-color;
+    }
+}
